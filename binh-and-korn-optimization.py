@@ -39,6 +39,10 @@ def ParetoPointsGeneration():
 		sheet.getCellRangeByName("B" + str(offset)).setValue( sheet.getCellRangeByName("$B$3").getValue() )
 		sheet.getCellRangeByName("C" + str(offset)).setValue( sheet.getCellRangeByName("$C$3").getValue() )
 
+		# Store the constraints values.
+		sheet.getCellRangeByName("D" + str(offset)).setValue( sheet.getCellRangeByName("$D$3").getValue() )
+		sheet.getCellRangeByName("E" + str(offset)).setValue( sheet.getCellRangeByName("$E$3").getValue() )
+
 		# Store the weights used for the objectives.
 		sheet.getCellRangeByName("F" + str(offset)).setValue( sheet.getCellRangeByName("$F$3").getValue() )
 		sheet.getCellRangeByName("G" + str(offset)).setValue( sheet.getCellRangeByName("$G$3").getValue() )
